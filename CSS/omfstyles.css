@@ -1,7 +1,7 @@
 
 
 .home-page{
-    width: 100%;
+    width: 80%;
     height: 100%;
     display:flex;
     flex-direction: column;
@@ -25,32 +25,29 @@
     display:flex;
     flex-direction: column;
     margin: 2% 2% 2% 2%;
-    padding: 10px 20px 10px 150px;
+    padding: 0% 30% 0% 30%;
     align-content:center;
+    border: 1px solid black;
 
 }
 
 .place{
     display: flex;
-    flex-direction: column;
-    text-align:left;
+    flex-direction: row;
+    text-align:center;
+    width: 80%;
     height: 30px;
-    margin: 2% 2% 2% 2%;
-    padding: 5px 10px 5px 10px;
+    padding: 0% 20% 2% 40%;
 } 
 
 .display-icon{
-    display: flex;
-    flex-direction:row;
     font-size: 2rem;
-    padding: 10px 250px 10px 250px;
     color:rgb(26, 25, 24);
 } 
 
 .place-name{
-    display:flex;
-    flex-direction:row;
-    margin-left: 30px; 
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .booking-menu{
@@ -69,7 +66,7 @@
 .booking{
     display: block;
     flex-direction: row;
-    /* width:80%; */
+    width:80%;
     height:100px;
     font-size: 3rem;
     font-weight: bold;
@@ -159,9 +156,9 @@
     color: white;
     margin-left:30px; 
     border: 1px solid black;
-    transform: translate(60px,2px);
+    transform: translate(60%,10%);
     position: absolute;
-    top: px; left:50px;
+    left:10%;
      
 }
 
@@ -316,7 +313,7 @@
 .footer{
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 78%;
     height: 150px;
     color: rgb(246, 249, 250);
     background-color:#060707;
@@ -372,10 +369,11 @@
 .page-header{
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 75%;
     height: 150px;
     align-content:center;
     background-color:white;
+    padding: 50px 0px 50px 50px;
     margin: 1% 20% 0% 10%;
 }
 
@@ -393,7 +391,7 @@
     height: 400px;
     display:flex;
     flex-direction: column;
-    margin: 0% 0% 0% 10%;
+    margin: 2% 2% 2% 10%;
     
 }
 
@@ -410,10 +408,10 @@
 .food-menu{
     display:flex;
     flex-direction: column;
-    width: 80%;
+    width: 79%;
     height: 1600px;
     padding: 10px 5px 0px 5px;
-    margin: 0% 12% 0% 10%;
+    margin: 0% 10% 0% 10%;
     align-content:center;
     border-radius: 40px 40px 0px 0px;
     position: relative;
@@ -477,9 +475,9 @@
     color:rgb(26, 25, 24);
     background-color:white;
     width:90%;
-    height:80px; 
-    margin:5px 5px 5px 30px;
-    padding: 5px 5px 5px 5px;
+    height:90px; 
+    margin:0px 0px 0px 30px;
+    /* padding: 5px 0px 5px 5px; */
     border-radius: 25px;
     box-shadow: 2px 2px 10px rgb(146, 142, 142);
    
@@ -489,7 +487,7 @@
     display: flex;
     flex-direction: column;
     font-size: 32px;
-    width: 70%;
+    width: 60%;
     height: 50px;
     padding: 5px 100px 0px 10px;
     margin:0px 0px 5px 0px;
@@ -517,11 +515,98 @@
 }
 
 .food-price{
-
-    display:flex;
-    flex-direction: column;
     font-size: 20px; 
-    padding: 30px 10px 0px 10px;
+    padding: 50px 10px 0px 120px;
     width: 5%;
     height: 50px; 
+}
+
+.tick-mark{
+    padding: 30px 20px 20px 20px;
+    color: white;
+    border: 1px solid black
+}
+
+.tick-mark :hover {
+
+    animation-duration: 1s;
+    animation-name: rotate;
+
+}
+
+.tick-section{
+    display:flex;
+    flex-direction:column; 
+    background-color:rgb(99, 189, 192);
+    width:12%;
+    height:90px;    
+    border-radius: 0px 25px 25px 0px;
+    border: 1px solid black; 
+    position:relative;
+    
+}
+
+.tick-section :hover {
+    
+  animation-duration: 3s;
+  animation: slideIn 2s, rotate 1.75s;
+}
+
+
+/* @keyframes rotate {
+
+    transform: rotate(360deg);
+
+}
+
+@keyframes slideIn {
+
+    0% {
+      padding-right:0%;
+      opacity: 0;
+    }
+    20% {
+        padding-right:2%;
+        opacity: 1;
+    }
+    40% {
+        padding-right:4%;
+        opacity: 1;  
+    }
+
+    60% {
+        padding-right:6%;
+        opacity: 1;  
+    }
+    80% {
+        padding-right:8%;
+        opacity: 1;  
+    }
+
+    100% {
+        padding-right:10%;
+        opacity: 1;  
+    }
+  } */
+
+/* .fa-check-circle {
+    padding: 30px 20px 20px 20px;
+    color: white;
+} */
+
+.dish-add{
+    background-color:rgb(99, 189, 192);
+    width:80px;
+    height:90px;    
+    border-radius: 0px 25px 25px 0px;
+    border: 1px solid black; 
+    /* position:absolute; */
+    right:0;
+    opacity: 0;
+    transition: 1s;
+    transform: translateX(100%);
+}
+.dish-add:hover{
+    opacity: 1;
+    transform: translateX(0%);
 }
