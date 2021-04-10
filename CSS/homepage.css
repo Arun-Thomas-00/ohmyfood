@@ -146,18 +146,18 @@ html body {
     padding: 0 1rem;
 }
 
-.heart_icon{
+.heart_icon{  
+    color: #1b191b;
     font-size: 1.5rem;
-    background-color: white;
+    font-weight: 100;
     position: relative;
     bottom: 4rem;
     left: 15rem;
     width: 1rem;
     padding: 2px 2px 10px 10px;
-    color: rgb(148, 136, 136);
 }
 
-.heart_icon :hover {
+.heart_icon:hover {
 
     color: #913eaa;
     transition: 0.3s;
@@ -292,3 +292,15 @@ html body {
     background-color: #99e2d0;
 	animation-delay: 0.75s;
 }
+
+@media only screen and (min-width: 768px) {
+    .restaurant_section_container {
+        display: flex;
+        flex-direction: row;
+        padding-left: 20px;
+    }
+    .options_list{
+        flex-direction: row;
+        padding-left: 20px;
+    }
+  }
