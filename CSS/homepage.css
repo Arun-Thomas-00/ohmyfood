@@ -227,7 +227,15 @@ html body {
     display: flex;
     flex-direction: column;
     padding: 0px 0px 0px 10px;
-    color: #1c6ea4;
+}
+
+.omf_contact :hover{
+    color: rgb(246, 249, 250);
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
 }
 
 @keyframes loader-ani {
