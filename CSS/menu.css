@@ -300,6 +300,15 @@ html body{
     padding: 0px 0px 0px 10px;
 }
 
+.omf_contact :hover{
+    color: rgb(246, 249, 250);
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
 @media only screen and (min-width: 768px) {
     .menu_entrees {
         display: flex;
